@@ -2,22 +2,22 @@ class EmployeesListService
   include HTTParty
   base_uri 'https://reqres.in/api'
 
-  def self.call
-    response = get('/users')
+  def self.call(id = nil)
+    new(id).call
+  end
+
+  def initialize(id = nil)
+    @id = id
+  end
+
+  def call
+    response = @id ? self.class.get("/users/#{@id}") : self.class.get('/users')
     build_response(response.parsed_response)
   end
 
   private
 
-  def self.build_response(response)
-    {
-      employee_list: response['data'],
-      pagination: {
-        page: response['page'],
-        per_page: response['per_page'],
-        total: response['total'],
-        total_pages: response['total_pages']
-      }
-    }.as_json
+  def build_response(response)
+    { employees: response['data'] }.as_json
   end
 end

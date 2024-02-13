@@ -1,7 +1,11 @@
 import React from 'react';
 import { Container, Row, Col, Image, Button } from 'react-bootstrap';
 
-const Card = ({ avatar, firstName, lastName, email }) => {
+const Card = ({ id, avatar, firstName, lastName, email, details = false }) => {
+  function handleClick() {
+    window.location.href = `/user/${id}`;
+  }
+
   return (
     <Container fluid style={{ margin: '20px' }}>
       <Row className="align-items-center">
@@ -12,8 +16,8 @@ const Card = ({ avatar, firstName, lastName, email }) => {
           <h3>
             {firstName} {lastName}
           </h3>
-          <p>{email}</p>
-          <Button size="sm">More details</Button>
+          <p>{details ? email : ''}</p>
+          {!details && <Button onClick={() => handleClick()} size="sm">More details</Button>}
         </Col>
       </Row>
     </Container>
