@@ -1,7 +1,7 @@
 import * as React from 'react'
 import Card from './Card'
 
-const Hello = ({ employee_list, pagination }) => {
+const Hello = ({ employee_list }) => {
   return JSON.parse(employee_list).map(function (employee) {
     return (
       <Card
