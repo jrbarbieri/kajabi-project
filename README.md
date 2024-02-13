@@ -1,24 +1,15 @@
-# README
+## Notes when end the project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Dependencies
+- Foreman
+- Remount
+- React
+- React-dom
+- Ruby 3.3.0
+- Rails 7.1.3
 
-Things you may want to cover:
+# Tech debts
+- Remove all hello world code used to test Rails + React enviroment
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Explanations
+- Run project with ./bin/dev

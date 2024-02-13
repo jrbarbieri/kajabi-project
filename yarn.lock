@@ -71,7 +71,7 @@
   dependencies:
     "js-tokens" "^3.0.0 || ^4.0.0"
 
-"react-dom@^18.2.0":
+"react-dom@^18.2.0", "react-dom@>= 18.0.0":
   "integrity" "sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
   "version" "18.2.0"
@@ -79,12 +79,17 @@
     "loose-envify" "^1.1.0"
     "scheduler" "^0.23.0"
 
-"react@^18.2.0":
+"react@^18.2.0", "react@>= 18.0.0":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"
   dependencies:
     "loose-envify" "^1.1.0"
+
+"remount@^1.0.0":
+  "integrity" "sha512-TLGa5ahFxq7+d7YM6nzSC1NIE6LEtIi7Sxqpl7XaKs/2fIOHbCzBo8mAm5RInYFZZoyL9ICyJIKz1WGb8/dkOA=="
+  "resolved" "https://registry.npmjs.org/remount/-/remount-1.0.0.tgz"
+  "version" "1.0.0"
 
 "scheduler@^0.23.0":
   "integrity" "sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw=="
