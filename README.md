@@ -1,18 +1,10 @@
-## Notes when end the project
+## Summary
 
-# Dependencies
-- Foreman
-- Remount
-- React
-- React-dom
-- Ruby 3.3.0
-- Rails 7.1.3
-- React-bootstrap
-- Bootstrap
-- Httparty
+Project create for complete the exercise offered by Kajabi engineering's team.
 
-# Tech debts
-- Remove all hello world code used to test Rails + React enviroment
-
-# Explanations
-- Run project with ./bin/dev
+# How to run?
+- Clone this repository
+- Access the directory with `cd` command
+- Install all dependencies with `bundle install` and `npm install`
+  - Make sure you have Ruby 3.3+, Rails 7.1+ and Node 16.2+ installed before it.
+- Run project with command `./bin/dev`, not `rails server`. This will garantee that React will be up too.
